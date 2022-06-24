@@ -25,7 +25,7 @@ wwv_flow_imp_page.create_page(
 ,p_page_comment=>'fa-accessor-one'
 ,p_page_component_map=>'22'
 ,p_last_updated_by=>'GOLFMEISTER2005@YAHOO.COM'
-,p_last_upd_yyyymmddhh24miss=>'20220624153223'
+,p_last_upd_yyyymmddhh24miss=>'20220624200954'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(53711506950020532075)
@@ -277,6 +277,7 @@ wwv_flow_imp_page.create_page_button(
 ,p_button_sequence=>10
 ,p_button_plug_id=>wwv_flow_imp.id(53718888452381531382)
 ,p_button_name=>'Edit'
+,p_button_static_id=>'p4_btn_quick_edit'
 ,p_button_action=>'REDIRECT_PAGE'
 ,p_button_template_options=>'#DEFAULT#'
 ,p_button_template_id=>wwv_flow_imp.id(54128995927239301172)
