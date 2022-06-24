@@ -1,0 +1,61 @@
+prompt --application/shared_components/navigation/lists/dashboard
+begin
+--   Manifest
+--     LIST: Dashboard
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2022.04.12'
+,p_release=>'22.1.1'
+,p_default_workspace_id=>53682786834604570828
+,p_default_application_id=>140951
+,p_default_id_offset=>53962310681988211080
+,p_default_owner=>'WKSP_AJC'
+);
+wwv_flow_imp_shared.create_list(
+ p_id=>wwv_flow_imp.id(53710479700286808119)
+,p_name=>'Dashboard'
+,p_list_status=>'PUBLIC'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53710479952656808120)
+,p_list_item_display_sequence=>10
+,p_list_item_link_text=>'Action'
+,p_list_item_link_target=>'f?p=&APP_ID.::&APP_SESSION.::&DEBUG.:::'
+,p_list_item_icon=>'fa-apex'
+,p_list_text_01=>'10'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53710480276483808121)
+,p_list_item_display_sequence=>20
+,p_list_item_link_text=>'Process'
+,p_list_item_icon=>'fa-arrow-circle-o-down'
+,p_list_text_01=>'10'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53710480736870808121)
+,p_list_item_display_sequence=>30
+,p_list_item_link_text=>'Report'
+,p_list_item_link_target=>'f?p=&APP_ID.::&APP_SESSION.::&DEBUG.:::'
+,p_list_text_01=>'10'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53710481171714808122)
+,p_list_item_display_sequence=>40
+,p_list_item_link_text=>'Setup'
+,p_list_item_link_target=>'f?p=&APP_ID.::&APP_SESSION.::&DEBUG.:::'
+,p_list_text_01=>'10'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53710481509483808122)
+,p_list_item_display_sequence=>50
+,p_list_item_link_text=>'Recent'
+,p_list_text_01=>'10'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp.component_end;
+end;
+/

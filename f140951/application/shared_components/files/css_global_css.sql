@@ -1,0 +1,28 @@
+prompt --application/shared_components/files/css_global_css
+begin
+--   Manifest
+--     APP STATIC FILES: 140951
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2022.04.12'
+,p_release=>'22.1.1'
+,p_default_workspace_id=>53682786834604570828
+,p_default_application_id=>140951
+,p_default_id_offset=>53962310681988211080
+,p_default_owner=>'WKSP_AJC'
+);
+wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
+wwv_flow_imp.g_varchar2_table(1) := '2E742D547265654E61762E612D5472656556696577202E69732D657870616E6461626C653E2E612D54726565566965772D746F67676C653A6265666F72657B20200D0A20202020636F6E74656E743A20222B223B20200D0A7D20200D0A2E742D54726565';
+wwv_flow_imp.g_varchar2_table(2) := '4E61762E612D5472656556696577202E69732D636F6C6C61707369626C653E2E612D54726565566965772D746F67676C653A6265666F72657B20200D0A20202020636F6E74656E743A20222D223B20200D0A7D20200D0A74645B686561646572733D224C';
+wwv_flow_imp.g_varchar2_table(3) := '494E4B225D207B20200D0A20202077696474683A20313570782021696D706F7274616E743B20200D0A7D0D0A2E637573746F6D2D64697361626C6564207B0D0A2020202020706F696E7465722D6576656E74733A206E6F6E653B0D0A2020202063757273';
+wwv_flow_imp.g_varchar2_table(4) := '6F723A2064656661756C743B0D0A202020206F7061636974793A202E363B0D0A7D';
+wwv_flow_imp_shared.create_app_static_file(
+ p_id=>wwv_flow_imp.id(53878218173784742926)
+,p_file_name=>'css/global.css'
+,p_mime_type=>'text/css'
+,p_file_charset=>'utf-8'
+,p_file_content => wwv_flow_imp.varchar2_to_blob(wwv_flow_imp.g_varchar2_table)
+);
+wwv_flow_imp.component_end;
+end;
+/

@@ -1,0 +1,160 @@
+prompt --application/shared_components/navigation/lists/kvs_side_menu
+begin
+--   Manifest
+--     LIST: KVS Side Menu
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2022.04.12'
+,p_release=>'22.1.1'
+,p_default_workspace_id=>53682786834604570828
+,p_default_application_id=>140951
+,p_default_id_offset=>53962310681988211080
+,p_default_owner=>'WKSP_AJC'
+);
+wwv_flow_imp_shared.create_list(
+ p_id=>wwv_flow_imp.id(54129020961604334321)
+,p_name=>'KVS Side Menu'
+,p_list_status=>'PUBLIC'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(54131621314635149714)
+,p_list_item_display_sequence=>1
+,p_list_item_link_text=>'Home'
+,p_list_item_link_target=>'f?p=&APP_ID.:1:&SESSION.::&DEBUG.:1:::'
+,p_list_item_icon=>'fa-home'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(54131622675039165387)
+,p_list_item_display_sequence=>1000
+,p_list_item_link_text=>'Setup'
+,p_parent_list_item_id=>wwv_flow_imp.id(54131621314635149714)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53998747803316436963)
+,p_list_item_display_sequence=>1020
+,p_list_item_link_text=>'Groups'
+,p_list_item_link_target=>'javascript:selectQE(1020);'
+,p_list_item_disp_cond_type=>'EXPRESSION'
+,p_list_item_disp_condition=>'kvs_apex.ac(1020,''R'')'
+,p_list_item_disp_condition2=>'PLSQL'
+,p_parent_list_item_id=>wwv_flow_imp.id(54131622675039165387)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(54006291524351512710)
+,p_list_item_display_sequence=>1025
+,p_list_item_link_text=>'Users'
+,p_list_item_link_target=>'javascript:selectQE(1025);'
+,p_list_item_disp_cond_type=>'EXPRESSION'
+,p_list_item_disp_condition=>'kvs_apex.ac(1025,''R'')'
+,p_list_item_disp_condition2=>'PLSQL'
+,p_parent_list_item_id=>wwv_flow_imp.id(54131622675039165387)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(54045357853895212278)
+,p_list_item_display_sequence=>2000
+,p_list_item_link_text=>'Administration'
+,p_list_item_link_target=>'f?p=&APP_ID.:2000:&SESSION.::&DEBUG.:2000:::'
+,p_parent_list_item_id=>wwv_flow_imp.id(54131621314635149714)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(54165606433688684880)
+,p_list_item_display_sequence=>30000
+,p_list_item_link_text=>'General Ledger'
+,p_list_item_link_target=>'f?p=&APP_ID.:30000:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-book'
+,p_list_item_disp_cond_type=>'EXPRESSION'
+,p_list_item_disp_condition=>'apex1.access_system(''GL0000'')'
+,p_list_item_disp_condition2=>'PLSQL'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(54168154196710606033)
+,p_list_item_display_sequence=>31000
+,p_list_item_link_text=>'Actions'
+,p_parent_list_item_id=>wwv_flow_imp.id(54165606433688684880)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53857780864167010693)
+,p_list_item_display_sequence=>31005
+,p_list_item_link_text=>'Chart of Accounts'
+,p_list_item_link_target=>'javascript:selectQE(31005);'
+,p_list_item_disp_cond_type=>'EXPRESSION'
+,p_list_item_disp_condition=>'kvs_apex.ac(31005,''R'')'
+,p_list_item_disp_condition2=>'PLSQL'
+,p_parent_list_item_id=>wwv_flow_imp.id(54168154196710606033)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53853537566078719906)
+,p_list_item_display_sequence=>80000
+,p_list_item_link_text=>'Utility Bill'
+,p_list_item_link_target=>'f?p=&APP_ID.:80000:&SESSION.::&DEBUG.:80000:::'
+,p_list_item_icon=>'fa-lightbulb-o'
+,p_list_item_disp_cond_type=>'EXPRESSION'
+,p_list_item_disp_condition=>'apex1.access_system(''UB0000'')'
+,p_list_item_disp_condition2=>'PLSQL'
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53853540621334756622)
+,p_list_item_display_sequence=>81000
+,p_list_item_link_text=>'Actions'
+,p_parent_list_item_id=>wwv_flow_imp.id(53853537566078719906)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53853623717131811576)
+,p_list_item_display_sequence=>81005
+,p_list_item_link_text=>'Consumers'
+,p_list_item_link_target=>'javascript:selectQE(81005);'
+,p_list_item_disp_cond_type=>'EXPRESSION'
+,p_list_item_disp_condition=>'kvs_apex.ac(81005,''R'')'
+,p_list_item_disp_condition2=>'PLSQL'
+,p_parent_list_item_id=>wwv_flow_imp.id(53853540621334756622)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53853540877472760299)
+,p_list_item_display_sequence=>82000
+,p_list_item_link_text=>'Processes'
+,p_parent_list_item_id=>wwv_flow_imp.id(53853537566078719906)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53856330615341200594)
+,p_list_item_display_sequence=>82015
+,p_list_item_link_text=>'Billing Calculations / Register'
+,p_list_item_link_target=>'javascript:selectQE(82015);'
+,p_list_item_disp_cond_type=>'EXPRESSION'
+,p_list_item_disp_condition=>'kvs_apex.ac(82015,''R'')'
+,p_list_item_disp_condition2=>'PLSQL'
+,p_parent_list_item_id=>wwv_flow_imp.id(53853540877472760299)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53853541246878762177)
+,p_list_item_display_sequence=>83000
+,p_list_item_link_text=>'Reports'
+,p_parent_list_item_id=>wwv_flow_imp.id(53853537566078719906)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(53856336666809286010)
+,p_list_item_display_sequence=>83010
+,p_list_item_link_text=>'Utility Bill Forms'
+,p_list_item_link_target=>'javascript:selectQE(83010);'
+,p_list_item_disp_cond_type=>'EXPRESSION'
+,p_list_item_disp_condition=>'kvs_apex.ac(83010,''R'')'
+,p_list_item_disp_condition2=>'PLSQL'
+,p_parent_list_item_id=>wwv_flow_imp.id(53853541246878762177)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_imp.component_end;
+end;
+/
