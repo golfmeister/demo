@@ -59,7 +59,7 @@ wwv_flow_imp.create_flow(
 ,p_substitution_string_03=>'REGION_BG'
 ,p_substitution_value_03=>'u-color-17-bg'
 ,p_last_updated_by=>'GOLFMEISTER2005@YAHOO.COM'
-,p_last_upd_yyyymmddhh24miss=>'20220624160711'
+,p_last_upd_yyyymmddhh24miss=>'20220624200954'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>1706
 ,p_ui_type_name => null
